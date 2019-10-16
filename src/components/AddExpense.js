@@ -1,7 +1,13 @@
 import React from 'react';
+import ExpenseForm from './ExpenseForm';
 
-const Dashboard = () => {
-  return <div>This is the add expense component</div>;
+const AddExpense = () => {
+  return (
+    <div>
+      <h1>Add Expense</h1>
+      <ExpenseForm />
+    </div>
+  );
 };
 
-export default Dashboard;
+export default AddExpense;
