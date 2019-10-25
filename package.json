@@ -50,5 +50,10 @@
     "jest": "20.0.4",
     "react-test-renderer": "16.0.0-rc.3",
     "webpack-dev-server": "2.5.1"
+  },
+  "engines": {
+    "node": "10.16.3",
+    "npm": "6.9.0",
+    "yarn": "1.17.3"
   }
 }
