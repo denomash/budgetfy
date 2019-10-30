@@ -1,7 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { connect } from 'react-redux';
 
-const Header = () => {
+import { startLoggout } from '../../actions/auth';
+
+export const Header = ({ startLoggout }) => {
   return (
     <div>
       <h1>Budgetify</h1>
@@ -27,8 +30,17 @@ const Header = () => {
           </NavLink>
         </li>
       </ul>
+      <button onClick={startLoggout}>Logout</button>
+      <br />
     </div>
   );
 };
 
-export default Header;
+const mapDispatchToProps = dispatch => ({
+  startLoggout: () => dispatch(startLoggout())
+});
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(Header);
