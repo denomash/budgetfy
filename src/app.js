@@ -8,6 +8,7 @@ import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 import 'react-dates/lib/css/_datepicker.css';
 import './firebase/firebase';
+import { startSetExpense } from './actions/expenses';
 
 const store = configureStore();
 
@@ -17,4 +18,8 @@ const app = (
   </Provider>
 );
 
-ReactDOM.render(app, document.getElementById('app'));
+ReactDOM.render(<p>Loading...</p>, document.getElementById('app'));
+
+store.dispatch(startSetExpense()).then(() => {
+  ReactDOM.render(app, document.getElementById('app'));
+});
