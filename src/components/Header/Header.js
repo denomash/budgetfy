@@ -10,18 +10,13 @@ export const Header = ({ startLoggout }) => {
       <h1>Budgetify</h1>
       <ul>
         <li>
-          <NavLink exact to="/" activeClassName="is-active">
+          <NavLink exact to="/dashboard" activeClassName="is-active">
             Go Home
           </NavLink>
         </li>
         <li>
           <NavLink to="/add" activeClassName="is-active">
             Add expense
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/edit" activeClassName="is-active">
-            Edit Expense
           </NavLink>
         </li>
         <li>

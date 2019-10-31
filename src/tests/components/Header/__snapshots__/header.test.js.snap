@@ -11,7 +11,7 @@ exports[`Should render header correctly 1`] = `
         activeClassName="is-active"
         ariaCurrent="true"
         exact={true}
-        to="/"
+        to="/dashboard"
       >
         Go Home
       </NavLink>
@@ -23,15 +23,6 @@ exports[`Should render header correctly 1`] = `
         to="/add"
       >
         Add expense
-      </NavLink>
-    </li>
-    <li>
-      <NavLink
-        activeClassName="is-active"
-        ariaCurrent="true"
-        to="/edit"
-      >
-        Edit Expense
       </NavLink>
     </li>
     <li>

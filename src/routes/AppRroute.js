@@ -9,6 +9,7 @@ import EditExpense from '../components/EditExpense';
 import HelpPage from '../components/HelpPage';
 import LoginPage from '../components/LoginPage';
 import PrivateRoute from '../components/PrivateRoute';
+import PublicRoute from '../components/PublicRoute';
 
 export const history = createBrowserHistory();
 
@@ -16,7 +17,7 @@ const AppRoutes = () => (
   <Router history={history}>
     <div>
       <Switch>
-        <Route exact path="/" component={LoginPage} />
+        <PublicRoute exact path="/" component={LoginPage} />
         <PrivateRoute exact path="/dashboard" component={Dashboard} />
         <PrivateRoute exact path="/add" component={AddExpense} />
         <PrivateRoute exact path="/edit/:id" component={EditExpense} />
