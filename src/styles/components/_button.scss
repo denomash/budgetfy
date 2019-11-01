@@ -12,4 +12,9 @@
   &--link {
     background: none;
   }
+
+  &--secondary {
+    @extend .button;
+    background: #888888;
+  }
 }
