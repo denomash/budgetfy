@@ -17,4 +17,8 @@
     @extend .button;
     background: #888888;
   }
+
+  &__login {
+    height: 50px;
+  }
 }
